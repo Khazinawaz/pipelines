@@ -105,7 +105,7 @@ pipelines:
         type: Bash
         configuration:
           inputResources:
-            - name: gitRes2
+            - name: gitRes
         execution:
           onExecute:
             - echo 'Hello'
@@ -113,7 +113,7 @@ pipelines:
         type: Bash
         configuration:
           inputResources:
-            - name: gitRes2
+            - name: gitRes
         execution:
           onExecute:
             - echo 'Hello'
@@ -121,7 +121,7 @@ pipelines:
         type: Bash
         configuration:
           inputResources:
-            - name: gitRes2
+            - name: gitRes
         execution:
           onExecute:
             - echo 'Hello'
