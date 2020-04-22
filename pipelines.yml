@@ -2,14 +2,8 @@ resources:
   - name: gitRes
     type: GitRepo
     configuration:
-      gitProvider: github
-      path: jatindogra/pipelines
- 
-  - name: gitRes2
-    type: GitRepo
-    configuration:
-      gitProvider: github
-      path: jatindogra/ymlTest
+      gitProvider: nawaz_gh
+      path: Khazinawaz/pipelines
 pipelines:
   - name: pipeline_hello_world
     steps:
@@ -75,8 +69,6 @@ pipelines:
             - name: basic
           inputResources:
             - name: gitRes
-          outputResources:
-            - name: gitRes2
         execution:
           onExecute:
             - echo 'Hello from u16!!!'
@@ -88,8 +80,6 @@ pipelines:
             - name: basic
           inputResources:
             - name: gitRes
-          outputResources:
-            - name: gitRes2
         execution:
           onExecute:
             - echo 'Hello from u18!!!'
@@ -101,8 +91,6 @@ pipelines:
             - name: basic
           inputResources:
             - name: gitRes
-          outputResources:
-            - name: gitRes2
         execution:
           onExecute:
             - echo 'Hello from c7!!!'
